@@ -1,10 +1,9 @@
-
 import { useEffect } from "react";
 import { Mail, Github, Linkedin, MapPin, Calendar, Phone, Flag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-scroll";
-import { useToast } from "sonner";
+import { toast } from "sonner";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -15,9 +14,6 @@ import ProjectCard from "@/components/ProjectCard";
 import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
-  // Toast notification for site visitors
-  const toast = useToast;
-
   useEffect(() => {
     // Show welcome toast when page loads
     toast.info("👋 Welcome to my portfolio!", {
@@ -165,7 +161,6 @@ const Index = () => {
         />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* You can add more skill icons from lucide-react as needed */}
           {[
             { 
               title: "Programming Languages", 
@@ -209,7 +204,6 @@ const Index = () => {
           ))}
         </div>
         
-        {/* Add a note for future skills */}
         <div className="mt-12 text-center text-muted-foreground text-sm">
           {/* This section allows for future skill additions */}
         </div>
@@ -320,7 +314,6 @@ const Index = () => {
           ))}
         </div>
         
-        {/* Add a note for future projects */}
         <div className="mt-12 text-center text-muted-foreground text-sm">
           {/* This section allows for future project additions */}
         </div>
@@ -386,7 +379,6 @@ const Index = () => {
           </div>
         </div>
         
-        {/* Add a note for future certifications */}
         <div className="mt-8 text-center text-muted-foreground text-sm">
           {/* This section allows for future certification additions */}
         </div>

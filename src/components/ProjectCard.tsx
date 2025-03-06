@@ -1,4 +1,5 @@
 
+import { CSSProperties } from "react";
 import { cn } from "@/lib/utils";
 import { ExternalLink, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -12,6 +13,7 @@ interface ProjectCardProps {
   liveUrl?: string;
   repoUrl?: string;
   className?: string;
+  style?: CSSProperties;
 }
 
 export default function ProjectCard({
@@ -22,12 +24,13 @@ export default function ProjectCard({
   liveUrl,
   repoUrl,
   className,
+  style,
 }: ProjectCardProps) {
   return (
     <div className={cn(
       "glass-card overflow-hidden group",
       className
-    )}>
+    )} style={style}>
       {/* Project Image with overlay */}
       <div className="relative h-48 overflow-hidden">
         <div className="absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
