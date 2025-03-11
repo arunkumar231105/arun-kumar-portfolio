@@ -2,9 +2,19 @@
 import ProjectCard from "@/components/ProjectCard";
 import SectionHeading from "@/components/SectionHeading";
 
+// Define a proper interface for project objects
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  repoUrl?: string;
+  liveUrl?: string;
+  imagePath?: string;
+}
+
 export default function ProjectsSection() {
   // EDITABLE: Projects array - Add new projects or update existing ones here
-  const projects = [
+  const projects: Project[] = [
     {
       title: "SZABIST Timetable Website",
       description: "A tool for university students to easily find and manage their class schedules with a user-friendly interface.",
