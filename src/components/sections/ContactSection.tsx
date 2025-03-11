@@ -21,6 +21,7 @@ export default function ContactSection() {
               Feel free to reach out to me through the form or via my social profiles.
             </p>
             
+            {/* EDITABLE: Contact information - Update these links and text as needed */}
             <div className="space-y-4">
               <a href="mailto:arunkumarjuswani12@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="h-5 w-5" />

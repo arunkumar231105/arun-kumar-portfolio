@@ -24,6 +24,7 @@ const Index = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* EDITABLE: Add, remove, or reorder sections here to change the structure of your portfolio */}
       <Navbar />
       <HeroSection />
       <AboutSection />

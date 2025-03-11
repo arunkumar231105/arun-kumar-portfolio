@@ -10,6 +10,7 @@ export default function AwardsSection() {
         subtitle="Recognition of my achievements and skills" 
       />
       
+      {/* EDITABLE: Awards grid - Add new awards or modify existing ones */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="glass-card p-6 animate-slide-in">
           <h3 className="text-xl font-bold mb-3">ZABEfest 2024 Speed Coding and Debugging Competition</h3>
@@ -28,10 +29,22 @@ export default function AwardsSection() {
             <Badge variant="outline" className="border-primary/30 bg-primary/5">Score: 94%</Badge>
           </div>
         </div>
+        
+        {/* EDITABLE: Add more award cards here
+        <div className="glass-card p-6 animate-slide-in" style={{
+          animationDelay: "0.4s"
+        }}>
+          <h3 className="text-xl font-bold mb-3">New Award Title</h3>
+          <p className="text-muted-foreground mb-4">Description of the award or certification.</p>
+          <div className="flex flex-wrap gap-2">
+            <Badge variant="outline" className="border-primary/30 bg-primary/5">Badge Text</Badge>
+          </div>
+        </div>
+        */}
       </div>
       
       <div className="mt-8 text-center text-muted-foreground text-sm">
-        {/* This section allows for future certification additions */}
+        {/* EDITABLE: This area can be used for an awards footnote or additional information */}
       </div>
     </section>
   );

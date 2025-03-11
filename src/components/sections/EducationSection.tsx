@@ -11,6 +11,7 @@ export default function EducationSection() {
       />
       
       <div className="glass-card p-8 animate-fade-in">
+        {/* EDITABLE: Education items - Add new degrees or modify existing ones */}
         <TimelineItem 
           title="BS – Software Engineering" 
           subtitle="SZABIST Karachi Campus" 
@@ -18,6 +19,16 @@ export default function EducationSection() {
           description="Currently pursuing a bachelor's degree in Software Engineering, focusing on programming fundamentals, software design principles, and practical application development." 
           isLast={true} 
         />
+        
+        {/* EDITABLE: To add more education items, remove the isLast prop from the item above and add new TimelineItem components here
+        <TimelineItem 
+          title="New Degree" 
+          subtitle="Institution Name" 
+          date="Start – End Year" 
+          description="Description of your education, focus areas, achievements, etc." 
+          isLast={true} 
+        />
+        */}
       </div>
     </section>
   );

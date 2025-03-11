@@ -11,6 +11,7 @@ export default function ExperienceSection() {
       />
       
       <div className="glass-card p-8 animate-fade-in">
+        {/* EDITABLE: Experience items - Add new positions or modify existing ones */}
         <TimelineItem 
           title="Remote Internships" 
           subtitle="CodSoft & Code Alpha" 
@@ -23,6 +24,19 @@ export default function ExperienceSection() {
           ]} 
           isLast={true} 
         />
+        
+        {/* EDITABLE: To add more experience items, remove the isLast prop from the item above and add new TimelineItem components here
+        <TimelineItem 
+          title="New Position" 
+          subtitle="Company Name" 
+          date="Start – End Date" 
+          description={[
+            "Responsibility or achievement 1",
+            "Responsibility or achievement 2"
+          ]} 
+          isLast={true} 
+        />
+        */}
       </div>
     </section>
   );

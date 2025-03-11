@@ -3,6 +3,7 @@ import SkillCard from "@/components/SkillCard";
 import SectionHeading from "@/components/SectionHeading";
 
 export default function SkillsSection() {
+  // EDITABLE: Skills array - Add new skills or modify existing ones here
   const skills = [
     {
       title: "Programming Languages",
@@ -49,6 +50,13 @@ export default function SkillsSection() {
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" /></svg>,
       description: "Experience with Linux operating systems for development and deployment of applications."
     }
+    // EDITABLE: Add new skills here
+    // Example:
+    // {
+    //   title: "DevOps & Cloud Computing",
+    //   icon: <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path d="..." /></svg>,
+    //   description: "Experience with Docker, Kubernetes, AWS and CI/CD pipelines for automated development and deployment."
+    // }
   ];
 
   return (
@@ -75,7 +83,7 @@ export default function SkillsSection() {
       </div>
       
       <div className="mt-12 text-center text-muted-foreground text-sm">
-        {/* This section allows for future skill additions */}
+        {/* EDITABLE: This area can be used for additional skill information or a skills footer */}
       </div>
     </section>
   );

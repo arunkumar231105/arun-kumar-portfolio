@@ -1,3 +1,4 @@
+
 import { MapPin, Mail, Calendar, Phone, Flag, Linkedin, Github } from "lucide-react";
 
 export default function AboutSection() {
@@ -13,6 +14,7 @@ export default function AboutSection() {
           <div className="glass-card p-6">
             <h3 className="text-2xl font-bold mb-6">Personal Information</h3>
             <div className="space-y-4">
+              {/* EDITABLE: Personal information items - Edit values as needed */}
               {[{
                 icon: <MapPin className="h-5 w-5" />,
                 label: "Location",
@@ -66,6 +68,7 @@ export default function AboutSection() {
           animationDelay: "0.2s"
         }}>
           <div className="glass-card p-6">
+            {/* EDITABLE: Career Objective - Update this text to reflect your current career goals */}
             <h3 className="text-2xl font-bold mb-4">Career Objective</h3>
             <p className="text-muted-foreground mb-6">
               As a dedicated Software Engineering student, I blend technical expertise in Java, C++, 
@@ -75,6 +78,7 @@ export default function AboutSection() {
               career path in DevOps and Cloud Computing to further enhance my technical capabilities.
             </p>
             
+            {/* EDITABLE: Key Strengths - Add or modify strengths as you develop new skills */}
             <h4 className="text-xl font-bold mb-3">Key Strengths</h4>
             <ul className="list-disc ml-5 space-y-2 text-muted-foreground">
               <li>Strong problem-solving skills for efficient and scalable software solutions</li>

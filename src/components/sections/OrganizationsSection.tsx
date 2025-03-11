@@ -11,6 +11,7 @@ export default function OrganizationsSection() {
       />
       
       <div className="glass-card p-8 animate-fade-in">
+        {/* EDITABLE: Organization items - Add new positions or modify existing ones */}
         <TimelineItem 
           title="IEEE Society - SZABIST" 
           subtitle="Assistant Director" 
@@ -35,6 +36,19 @@ export default function OrganizationsSection() {
           ]} 
           isLast={true} 
         />
+        
+        {/* EDITABLE: To add more organization items, remove the isLast prop from the item above and add new TimelineItem components here
+        <TimelineItem 
+          title="New Organization" 
+          subtitle="Your Role" 
+          date="Start – End Date" 
+          description={[
+            "Responsibility or achievement 1",
+            "Responsibility or achievement 2" 
+          ]} 
+          isLast={true} 
+        />
+        */}
       </div>
     </section>
   );
