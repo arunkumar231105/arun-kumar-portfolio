@@ -1,4 +1,3 @@
-
 import { MapPin, Mail, Calendar, Phone, Flag, Linkedin, Github } from "lucide-react";
 
 export default function AboutSection() {
@@ -72,7 +71,8 @@ export default function AboutSection() {
               As a dedicated Software Engineering student, I blend technical expertise in Java, C++, 
               and Data Structures with a passion for creating intuitive UI/UX designs using Figma. 
               I aim to develop innovative, user-centric applications that leverage cutting-edge AI technologies 
-              to solve real-world problems efficiently.
+              to solve real-world problems efficiently. Looking ahead, I am enthusiastic about pursuing a 
+              career path in DevOps and Cloud Computing to further enhance my technical capabilities.
             </p>
             
             <h4 className="text-xl font-bold mb-3">Key Strengths</h4>
