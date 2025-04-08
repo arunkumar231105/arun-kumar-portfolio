@@ -1,10 +1,48 @@
 
+import { useEffect, useState } from "react";
 import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-scroll";
 
 export default function HeroSection() {
+  // State for typewriter animation
+  const [displayText, setDisplayText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isGreetingComplete, setIsGreetingComplete] = useState(false);
+  const [descriptionText, setDescriptionText] = useState("");
+  const [descriptionIndex, setDescriptionIndex] = useState(0);
+
+  // Text content
+  const greeting = "Hello, I'm Arun Kumar";
+  const description = "Passionate Software Engineering student with strong problem-solving skills and a keen interest in front-end and back-end development. Seeking opportunities to apply my knowledge in real-world projects and grow as a developer";
+
+  // Typewriter effect for greeting
+  useEffect(() => {
+    if (currentIndex < greeting.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(prev => prev + greeting[currentIndex]);
+        setCurrentIndex(prevIndex => prevIndex + 1);
+      }, 100); // Speed of typing
+      
+      return () => clearTimeout(timeout);
+    } else {
+      setIsGreetingComplete(true);
+    }
+  }, [currentIndex, greeting]);
+
+  // Typewriter effect for description (starts after greeting is complete)
+  useEffect(() => {
+    if (isGreetingComplete && descriptionIndex < description.length) {
+      const timeout = setTimeout(() => {
+        setDescriptionText(prev => prev + description[descriptionIndex]);
+        setDescriptionIndex(prevIndex => prevIndex + 1);
+      }, 20); // Faster typing for description
+      
+      return () => clearTimeout(timeout);
+    }
+  }, [isGreetingComplete, descriptionIndex, description]);
+
   return (
     <section id="home" className="pt-32 md:pt-40 pb-16 md:pb-24 container mx-auto px-4 sm:px-6">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -14,14 +52,16 @@ export default function HeroSection() {
             Software Engineering Student
           </Badge>
           
-          {/* EDITABLE: Update the heading with your name */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight animate-slide-in">
-            Hello, I'm <span className="text-gradient">Arun Kumar</span>
+          {/* Typewriter animation for greeting */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
+            <span className="text-gradient">{displayText}</span>
+            <span className={`inline-block w-1 h-10 bg-primary ml-1 ${currentIndex < greeting.length ? 'animate-pulse' : 'opacity-0'}`}></span>
           </h1>
           
-          {/* EDITABLE: Update this introduction text to reflect your current focus */}
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl animate-slide-in" style={{ animationDelay: "0.2s" }}>
-            Passionate Software Engineering student with strong problem-solving skills and a keen interest in front-end and back-end development. Seeking opportunities to apply my knowledge in real-world projects and grow as a developer
+          {/* Typewriter animation for description */}
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
+            {descriptionText}
+            <span className={`inline-block w-1 h-5 bg-primary ml-1 ${isGreetingComplete && descriptionIndex < description.length ? 'animate-pulse' : 'opacity-0'}`}></span>
           </p>
           
           <div className="flex flex-wrap gap-4 animate-slide-in" style={{ animationDelay: "0.4s" }}>
