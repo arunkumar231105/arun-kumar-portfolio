@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { Mail } from "lucide-react";
+import { Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-scroll";
@@ -65,6 +65,11 @@ export default function HeroSection() {
           </p>
           
           <div className="flex flex-wrap gap-4 animate-slide-in" style={{ animationDelay: "0.4s" }}>
+            <a href="/arun-kumar-cv.pdf" download="Arun_Kumar_CV.pdf">
+              <Button size="lg" className="rounded-md bg-accent hover:bg-accent/90">
+                <Download className="mr-2 h-4 w-4" /> Download CV
+              </Button>
+            </a>
             <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}>
               <Button size="lg" className="rounded-md">
                 <Mail className="mr-2 h-4 w-4" /> Contact Me

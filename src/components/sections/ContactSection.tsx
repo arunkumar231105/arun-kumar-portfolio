@@ -1,7 +1,8 @@
 
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Download } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import ContactForm from "@/components/ContactForm";
+import { Button } from "@/components/ui/button";
 
 export default function ContactSection() {
   return (
@@ -35,6 +36,14 @@ export default function ContactSection() {
                 <Github className="h-5 w-5" />
                 <span>github.com/arunkumar231105</span>
               </a>
+              
+              <div className="pt-4">
+                <a href="/arun-kumar-cv.pdf" download="Arun_Kumar_CV.pdf">
+                  <Button size="sm" variant="outline" className="rounded-md">
+                    <Download className="mr-2 h-4 w-4" /> Download CV
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
