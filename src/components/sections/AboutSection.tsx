@@ -71,20 +71,18 @@ export default function AboutSection() {
             {/* EDITABLE: Career Objective - Update this text to reflect your current career goals */}
             <h3 className="text-2xl font-bold mb-4">Career Objective</h3>
             <p className="text-muted-foreground mb-6">
-              As a dedicated Software Engineering student, I blend technical expertise in Java, C++, 
-              and Data Structures with a passion for creating intuitive UI/UX designs using Figma. 
-              I aim to develop innovative, user-centric applications that leverage cutting-edge AI technologies 
-              to solve real-world problems efficiently. Looking ahead, I am enthusiastic about pursuing a 
-              career path in DevOps and Cloud Computing to further enhance my technical capabilities.
+              As a passionate Software Engineering student, I specialize in full-stack development using the MERN stack (MongoDB, Express.js, React, Node.js), with a strong foundation in Java, C++, and Data Structures. I have a keen interest in building scalable, user-centric web applications with intuitive UI/UX designs using Figma. Looking ahead, I aim to deepen my expertise in DevOps and Cloud Computing to develop robust, efficient, and secure software solutions.
             </p>
             
             {/* EDITABLE: Key Strengths - Add or modify strengths as you develop new skills */}
             <h4 className="text-xl font-bold mb-3">Key Strengths</h4>
             <ul className="list-disc ml-5 space-y-2 text-muted-foreground">
-              <li>Strong problem-solving skills for efficient and scalable software solutions</li>
-              <li>Leadership and teamwork experience in tech communities</li>
-              <li>Quick adaptability to emerging technologies, especially in AI</li>
-              <li>Passion for UI/UX design and user-centric application development</li>
+              <li>Proficient in full-stack development with the MERN stack</li>
+              <li>Strong problem-solving abilities with a focus on scalable, maintainable code</li>
+              <li>Solid foundation in Java, C++, and Data Structures</li>
+              <li>Experience in collaborative team environments and leadership roles in tech communities</li>
+              <li>Enthusiastic about Cloud Computing, DevOps, and emerging technologies</li>
+              <li>Creative mindset for designing seamless, user-focused interfaces</li>
             </ul>
           </div>
         </div>
