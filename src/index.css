@@ -123,3 +123,20 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary;
 }
+
+/* Professional animated background utilities */
+@layer utilities {
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+  
+  .animate-drift {
+    animation: drift 20s ease-in-out infinite;
+  }
+  
+  @keyframes drift {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -30px) rotate(120deg); }
+    66% { transform: translate(-20px, 20px) rotate(240deg); }
+  }
+}

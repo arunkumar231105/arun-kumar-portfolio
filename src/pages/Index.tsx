@@ -1,6 +1,7 @@
 
 import { useEffect } from "react";
 import { toast } from "sonner";
+import AnimatedBackground from "@/components/AnimatedBackground";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/sections/HeroSection";
@@ -15,7 +16,8 @@ import ContactSection from "@/components/sections/ContactSection";
 
 const Index = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen relative">
+      <AnimatedBackground />
       {/* EDITABLE: Add, remove, or reorder sections here to change the structure of your portfolio */}
       <Navbar />
       <HeroSection />
