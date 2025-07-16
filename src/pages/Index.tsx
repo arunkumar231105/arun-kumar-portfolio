@@ -14,14 +14,6 @@ import AwardsSection from "@/components/sections/AwardsSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 const Index = () => {
-  useEffect(() => {
-    // Show welcome toast when page loads
-    toast.info("👋 Welcome to my portfolio!", {
-      description: "Feel free to explore and reach out if you have any questions.",
-      duration: 5000
-    });
-  }, []);
-
   return (
     <div className="flex flex-col min-h-screen">
       {/* EDITABLE: Add, remove, or reorder sections here to change the structure of your portfolio */}

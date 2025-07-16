@@ -15,7 +15,7 @@ export default function HeroSection() {
 
   // Text content
   const greeting = "Hello, I'm Arun Kumar";
-  const description = "Passionate Software Engineering student with strong problem-solving skills and a keen interest in front-end and back-end development. Seeking opportunities to apply my knowledge in real-world projects and grow as a developer";
+  const description = "Passionate Software Engineering student with strong problem-solving skills and expertise in full stack development using MERN stack. Seeking opportunities to apply my knowledge in real-world projects and grow as a developer";
 
   // Typewriter effect for greeting
   useEffect(() => {
