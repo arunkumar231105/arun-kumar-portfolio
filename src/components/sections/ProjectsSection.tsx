@@ -16,6 +16,26 @@ export default function ProjectsSection() {
   // EDITABLE: Projects array - Add new projects or update existing ones here
   const projects: Project[] = [
     {
+      title: "MERN Chat App",
+      description: "A real-time chat application built with MERN stack featuring one-to-one and group chat functionality using Socket.io for instant messaging.",
+      tags: ["MongoDB", "Express", "React", "Node.js", "Socket.io", "Real-time"],
+      repoUrl: "https://github.com/arunkumar231105/Mern-Chat-App.git",
+      // EDITABLE: Add liveUrl when the project is deployed
+      // liveUrl: "https://example.com",
+      // EDITABLE: Add imagePath when you have a project screenshot
+      // imagePath: "/path-to-image.jpg"
+    },
+    {
+      title: "Theft Detection Alarm",
+      description: "AI-powered real-time thief detection system using TensorFlow.js and COCO-SSD model. Detects people from webcam feed and triggers alarm sounds for intrusion alerts.",
+      tags: ["Next.js", "TensorFlow.js", "AI", "Object Detection", "React", "Tailwind CSS"],
+      repoUrl: "https://github.com/arunkumar231105/Theft-Detection-Alarm.git",
+      // EDITABLE: Add liveUrl when the project is deployed
+      // liveUrl: "https://example.com",
+      // EDITABLE: Add imagePath when you have a project screenshot
+      // imagePath: "/path-to-image.jpg"
+    },
+    {
       title: "SZABIST Timetable Website",
       description: "A tool for university students to easily find and manage their class schedules with a user-friendly interface.",
       tags: ["React", "UI/UX", "Web App", "Education"],

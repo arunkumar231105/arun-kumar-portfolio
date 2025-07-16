@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-scroll";
 
@@ -24,13 +24,6 @@ export default function Footer() {
             <p className="text-muted-foreground mt-2 max-w-md">
               Software Engineering student passionate about creating efficient, user-centric solutions.
             </p>
-            <div className="mt-4">
-              <a href="/arun-kumar-cv.pdf" download="Arun_Kumar_CV.pdf">
-                <Button size="sm" variant="outline" className="rounded-md">
-                  <Download className="mr-2 h-4 w-4" /> Download CV
-                </Button>
-              </a>
-            </div>
           </div>
           
           <div className="flex flex-col items-center md:items-end">
