@@ -46,7 +46,7 @@ export default function ProjectsSection() {
       // imagePath: "/path-to-image.jpg"
     }, 
     {
-      title: "Food App (UI/UX)",
+      title: "Food App Prototype",
       description: "Designed an intuitive food ordering prototype in Figma with a focus on user experience and visual appeal.",
       tags: ["UI/UX", "Figma", "Prototyping", "Mobile App"],
       // EDITABLE: Add repoUrl or liveUrl when available
@@ -55,23 +55,14 @@ export default function ProjectsSection() {
       // imagePath: "/path-to-image.jpg"
     }, 
     {
-      title: "Gym App (UI/UX)",
-      description: "Developed a fitness application with workout tracking features, progress monitoring, and personalized routines.",
+      title: "Gym App Mockup",
+      description: "Developed a fitness application mockup with workout tracking features, progress monitoring, and personalized routines.",
       tags: ["UI/UX", "Figma", "Mobile App", "Fitness"],
       // EDITABLE: Add repoUrl or liveUrl when available
       // repoUrl: "https://github.com/yourusername/repo.git",
       // liveUrl: "https://example.com",
       // imagePath: "/path-to-image.jpg"
-    }, 
-    {
-      title: "Small Business Loyalty Program",
-      description: "Built a React-based AI-powered web app for customer loyalty management and rewards tracking.",
-      tags: ["React", "AI", "Web App", "Business Solution"],
-      // EDITABLE: Add repoUrl or liveUrl when available
-      // repoUrl: "https://github.com/yourusername/repo.git",
-      // liveUrl: "https://example.com",
-      // imagePath: "/path-to-image.jpg"
-    }, 
+    },
     {
       title: "Library Management System",
       description: "Created a Java GUI-based system for book and user management with search, check-out, and analytics features.",
