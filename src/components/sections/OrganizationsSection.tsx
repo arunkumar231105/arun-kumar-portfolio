@@ -34,6 +34,13 @@ export default function OrganizationsSection() {
             "Represented the organization at Educational Expos (2022 & 2023)", 
             "Helped develop educational resources for community programs"
           ]} 
+        />
+        
+        <TimelineItem 
+          title="Zab-e-fest 2025" 
+          subtitle="IT Department Team Member" 
+          date="2025" 
+          description="Contributing to the technical aspects of the festival organization and supporting IT operations for the event." 
           isLast={true} 
         />
         
