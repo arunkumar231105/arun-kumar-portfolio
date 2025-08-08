@@ -71,18 +71,16 @@ export default function AboutSection() {
             {/* EDITABLE: Career Objective - Update this text to reflect your current career goals */}
             <h3 className="text-2xl font-bold mb-4">Career Objective</h3>
             <p className="text-muted-foreground mb-6">
-              As a passionate Software Engineering student, I specialize in full-stack development using the MERN stack (MongoDB, Express.js, React, Node.js), with a strong foundation in Java, C++, and Data Structures. I have a keen interest in building scalable, user-centric web applications with intuitive UI/UX designs using Figma. Looking ahead, I aim to deepen my expertise in DevOps and Cloud Computing to develop robust, efficient, and secure software solutions.
+              Software Engineering student specializing in full-stack development with MERN stack and strong foundation in Java, C++. Passionate about building scalable web applications and exploring Cloud Computing and DevOps technologies.
             </p>
             
             {/* EDITABLE: Key Strengths - Add or modify strengths as you develop new skills */}
             <h4 className="text-xl font-bold mb-3">Key Strengths</h4>
             <ul className="list-disc ml-5 space-y-2 text-muted-foreground">
-              <li>Proficient in full-stack development with the MERN stack</li>
-              <li>Strong problem-solving abilities with a focus on scalable, maintainable code</li>
-              <li>Solid foundation in Java, C++, and Data Structures</li>
-              <li>Experience in collaborative team environments and leadership roles in tech communities</li>
-              <li>Enthusiastic about Cloud Computing, DevOps, and emerging technologies</li>
-              <li>Creative mindset for designing seamless, user-focused interfaces</li>
+              <li>Full-stack development with MERN stack</li>
+              <li>Strong problem-solving and coding skills</li>
+              <li>Java, C++, and Data Structures expertise</li>
+              <li>Team collaboration and leadership experience</li>
             </ul>
           </div>
         </div>
