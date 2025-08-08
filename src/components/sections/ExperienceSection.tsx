@@ -13,7 +13,7 @@ export default function ExperienceSection() {
       <div className="glass-card p-8 animate-fade-in">
         {/* EDITABLE: Experience items - Add new positions or modify existing ones */}
         <TimelineItem 
-          title="Software Engineer (AI)" 
+          title="Software Engineer (AI) Intern" 
           subtitle="HexaVibes Solutions" 
           date="08/2025 – Present" 
           description={[
@@ -26,7 +26,7 @@ export default function ExperienceSection() {
         <TimelineItem 
           title="Web Designer (Front End Developer)" 
           subtitle="High Tech Software House & Training Centre" 
-          date="Internship" 
+          date="08/2025 – Present" 
           description={[
             "Gained hands-on experience in front-end development",
             "Worked on responsive web design and user interface development",
