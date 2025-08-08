@@ -15,7 +15,7 @@ export default function ExperienceSection() {
         <TimelineItem 
           title="Software Engineer (AI)" 
           subtitle="HexaVibes Solutions" 
-          date="Present" 
+          date="08/2025 – Present" 
           description={[
             "Working as Software Engineer with focus on AI technologies",
             "Developing AI-powered applications and solutions",
@@ -24,14 +24,14 @@ export default function ExperienceSection() {
         />
         
         <TimelineItem 
-          title="Remote Internships" 
-          subtitle="CodSoft & Code Alpha" 
-          date="06/2024 – 08/2024" 
+          title="Web Designer (Front End Developer)" 
+          subtitle="High Tech Software House & Training Centre" 
+          date="Internship" 
           description={[
-            "Completed one-month internship in Java (CodSoft) focusing on OOP and application development",
-            "Completed one-month internship in C++ (Code Alpha) focusing on data structures and algorithms",
-            "Engaged in debugging and code optimization exercises",
-            "Collaborated with team members on virtual projects"
+            "Gained hands-on experience in front-end development",
+            "Worked on responsive web design and user interface development",
+            "Applied modern web technologies and design principles",
+            "Collaborated with development team on various projects"
           ]} 
           isLast={true} 
         />
