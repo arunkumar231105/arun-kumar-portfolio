@@ -23,7 +23,7 @@ export default function EducationSection() {
         <TimelineItem 
           title="Cloud Data Engineering" 
           subtitle="Saylani Mass I.T. Training" 
-          date="June 2025 – May 2026" 
+          date="July 2025 – March 2026"
           description="Comprehensive training program focusing on cloud technologies, data engineering principles, and modern data pipeline development." 
           isLast={true} 
         />
