@@ -71,7 +71,7 @@ export default function AboutSection() {
             {/* EDITABLE: Career Objective - Update this text to reflect your current career goals */}
             <h3 className="text-2xl font-bold mb-4">Career Objective</h3>
             <p className="text-muted-foreground mb-6">
-              Passionate Software Engineering student with strong problem-solving skills and expertise in full stack development using MERN stack. Seeking opportunities to apply my knowledge in real-world projects and grow as a developer.
+              Enthusiastic Software Engineering student specializing in MERN stack and AI-driven applications. With hands-on experience in web development and ongoing training in Cloud Data Engineering, I aim to craft scalable, user-friendly, and intelligent solutions that bridge technology with real-world needs.
             </p>
             
             {/* EDITABLE: Key Strengths - Add or modify strengths as you develop new skills */}
