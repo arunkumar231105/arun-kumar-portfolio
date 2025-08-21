@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Send } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const contactSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -33,20 +34,38 @@ export default function ContactForm() {
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    console.log("Form submitted:", data);
-    
-    toast.success("Message sent successfully!", {
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
-    
-    form.reset();
-    setIsSubmitting(false);
-    
-    // Note: In a real application, you would send this data to a backend service
-    // Future improvement: Add email sending functionality
+    try {
+      console.log("Submitting contact form:", data);
+      
+      // Call the edge function to handle contact submission and email
+      const { data: result, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: data.name,
+          email: data.email,
+          message: data.message
+        }
+      });
+
+      if (error) {
+        console.error("Edge function error:", error);
+        throw new Error(error.message || "Failed to send message");
+      }
+
+      console.log("Contact submission successful:", result);
+      
+      toast.success("Message sent successfully!", {
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+      
+      form.reset();
+    } catch (error: any) {
+      console.error("Contact form submission error:", error);
+      toast.error("Failed to send message", {
+        description: error.message || "Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
