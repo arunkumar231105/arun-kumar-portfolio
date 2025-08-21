@@ -19,7 +19,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-            Passionate Software Engineering student with strong problem-solving skills and expertise in full stack development using MERN stack. Seeking opportunities to apply my knowledge in real-world projects and grow as a developer.
+            Passionate Software Engineering student specializing in MERN stack development and AI-driven solutions. Currently pursuing my Bachelor’s in Software Engineering at SZABIST and gaining hands-on experience as a Software Engineering Intern (AI). Exploring Cloud Data Engineering to combine cloud technologies with data-driven innovation. Always eager to build impactful, real-world solutions and grow as a developer.
           </p>
           
           <div className="flex flex-wrap gap-4 animate-slide-in" style={{ animationDelay: "0.4s" }}>
