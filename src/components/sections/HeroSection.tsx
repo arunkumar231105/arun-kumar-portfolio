@@ -40,7 +40,7 @@ export default function HeroSection() {
         <div className="lg:col-span-5 flex justify-center lg:justify-end animate-fade-in">
           <div className="relative">
             <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-primary/20 to-accent/30 blur-3xl opacity-70 animate-pulse-slow" />
-            <img src="/lovable-uploads/86bca9b3-f78c-40b1-a03e-e08f0b602d57.png" alt="Arun Kumar" className="rounded-3xl shadow-2xl h-80 w-80 object-cover object-center relative z-10" />
+            <img src="/lovable-uploads/67c40829-c58a-4f60-a54f-5518fbdb5f63.png" alt="Arun Kumar" className="rounded-3xl shadow-2xl h-80 w-80 object-cover object-center relative z-10" />
             <div className="absolute -bottom-5 -right-5 h-32 w-32 bg-primary/10 rounded-full z-0 animate-float" />
             <div className="absolute -top-5 -left-5 h-24 w-24 bg-accent/10 rounded-full z-0 animate-float" style={{
               animationDelay: "1s"
