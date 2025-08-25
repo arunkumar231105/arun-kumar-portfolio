@@ -27,9 +27,9 @@ export default function ContactSection() {
                 <Mail className="h-5 w-5" />
                 <span>arunkumarjuswani12@gmail.com</span>
               </a>
-              <a href="https://linkedin.com/in/arun-kumar-b578a128b" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/arun-kumar-b578a128b" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
-                <span>linkedin.com/in/arun-kumar-b578a128b</span>
+                <span>www.linkedin.com/in/arun-kumar-b578a128b</span>
               </a>
               <a href="https://github.com/arunkumar231105" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />

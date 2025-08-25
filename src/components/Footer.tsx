@@ -40,7 +40,7 @@ export default function Footer() {
               </Button>
               <Button asChild variant="ghost" size="icon" className="rounded-full">
                 <a 
-                  href="https://linkedin.com/in/arun-kumar-b578a128b" 
+                  href="https://www.linkedin.com/in/arun-kumar-b578a128b" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
