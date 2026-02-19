@@ -157,12 +157,12 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="container-section">
-      <SectionHeading
-        title="Projects"
-        subtitle="Production-grade work and engineering projects"
-        alignment="center"
-      />
+    <section className="container-section">
+      <div className="mb-10">
+        <h1 className="text-3xl font-bold mb-2">Projects</h1>
+        <p className="text-muted-foreground text-sm">Production-grade work and engineering projects</p>
+        <div className="h-px w-12 bg-primary mt-3" />
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (

@@ -1,14 +1,13 @@
 
 import TimelineItem from "@/components/TimelineItem";
-import SectionHeading from "@/components/SectionHeading";
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="container-section bg-muted/30">
-      <SectionHeading 
-        title="Professional Experience" 
-        subtitle="My internships and work history" 
-      />
+    <section className="container-section">
+      <div className="mb-10">
+        <h1 className="text-3xl font-bold mb-2">Experience</h1>
+        <div className="h-px w-12 bg-primary" />
+      </div>
       
       <div className="glass-card p-8 animate-fade-in">
         {/* EDITABLE: Experience items - Add new positions or modify existing ones */}

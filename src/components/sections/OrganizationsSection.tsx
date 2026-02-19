@@ -4,11 +4,11 @@ import SectionHeading from "@/components/SectionHeading";
 
 export default function OrganizationsSection() {
   return (
-    <section id="organizations" className="container-section bg-muted/30">
-      <SectionHeading 
-        title="Organizations & Leadership" 
-        subtitle="My contributions to communities and organizations" 
-      />
+    <section className="container-section">
+      <div className="mb-10">
+        <h2 className="text-2xl font-bold mb-2">Organizations & Leadership</h2>
+        <div className="h-px w-10 bg-primary" />
+      </div>
       
       <div className="glass-card p-8 animate-fade-in">
         {/* EDITABLE: Organization items - Add new positions or modify existing ones */}

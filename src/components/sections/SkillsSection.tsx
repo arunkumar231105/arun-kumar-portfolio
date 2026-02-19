@@ -1,4 +1,4 @@
-import SectionHeading from "@/components/SectionHeading";
+
 import { cn } from "@/lib/utils";
 
 interface SkillCategory {
@@ -73,12 +73,11 @@ function SkillCategory({ category, index }: { category: SkillCategory; index: nu
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="container-section bg-muted/30">
-      <SectionHeading
-        title="Skills & Expertise"
-        subtitle="Technologies I use to build production systems"
-        alignment="center"
-      />
+    <section className="container-section bg-muted/20">
+      <div className="mb-10">
+        <h2 className="text-2xl font-bold mb-2">Skills & Expertise</h2>
+        <div className="h-px w-10 bg-primary" />
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {categories.map((category, index) => (

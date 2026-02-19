@@ -4,11 +4,11 @@ import SectionHeading from "@/components/SectionHeading";
 
 export default function AwardsSection() {
   return (
-    <section id="awards" className="container-section">
-      <SectionHeading 
-        title="Awards & Certifications" 
-        subtitle="Recognition of my achievements and skills" 
-      />
+    <section className="container-section bg-muted/30">
+      <div className="mb-10">
+        <h2 className="text-2xl font-bold mb-2">Awards & Certifications</h2>
+        <div className="h-px w-10 bg-primary" />
+      </div>
       
       {/* EDITABLE: Awards grid - Add new awards or modify existing ones */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
