@@ -4,27 +4,43 @@ export default function AboutSection() {
     <section id="about" className="container-section">
       <div className="mb-12">
         <h2 className="section-title">About Me</h2>
-        <p className="section-subtitle">Get to know more about me and my background</p>
+        <p className="section-subtitle">Background, focus, and what I bring to the table</p>
       </div>
-      
+
       <div className="max-w-4xl mx-auto">
         <div className="animate-slide-in">
-          <div className="glass-card p-6">
-            {/* EDITABLE: Career Objective - Update this text to reflect your current career goals */}
-            <h3 className="text-2xl font-bold mb-4">Career Objective</h3>
-            <p className="text-muted-foreground mb-6">
-              Software Engineering student specializing in MERN stack, AI-driven applications, and Cloud Data Engineering. Passionate about building scalable, user-friendly solutions and eager to contribute technical skills to real-world projects.
-            </p>
-            
-            {/* EDITABLE: Key Strengths - Add or modify strengths as you develop new skills */}
-            <h4 className="text-xl font-bold mb-3">Key Strengths</h4>
-            <ul className="list-disc ml-5 space-y-2 text-muted-foreground">
-              <li>MERN stack full-stack development</li>
-              <li>Strong problem-solving and coding skills</li>
-              <li>Java, C++, Python, and Data Structures expertise</li>
-              <li>AI/ML concepts and Cloud Data Engineering knowledge</li>
-              <li>Team collaboration and leadership experience</li>
-            </ul>
+          <div className="glass-card p-8 space-y-8">
+            {/* Summary */}
+            <div>
+              <h3 className="text-2xl font-bold mb-3">Professional Summary</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Backend-focused software engineer with expertise in MERN stack, AI-driven applications, and Cloud Data Engineering.
+                I design and build scalable systems — from RESTful APIs and microservices to production-grade ETL pipelines and AI-integrated platforms.
+                Committed to clean architecture, performance, and real-world impact.
+              </p>
+            </div>
+
+            {/* Core Competencies */}
+            <div>
+              <h4 className="text-xl font-bold mb-4">Core Competencies</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  "Scalable Backend Architecture (Node.js, Express)",
+                  "Full-Stack MERN Development",
+                  "ETL Pipeline Design & Cloud Data Engineering",
+                  "AI/ML Integration & LLM-powered Applications",
+                  "RESTful API Design & Microservices",
+                  "Data Structures, Algorithms & System Design",
+                  "Java, C++, Python Engineering",
+                  "Team Leadership & Agile Collaboration",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-2 text-muted-foreground">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
