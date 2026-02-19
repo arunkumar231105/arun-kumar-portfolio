@@ -1,7 +1,7 @@
 
 import { Mail, Github, Linkedin, Download, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -55,7 +55,7 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-3 animate-slide-in" style={{ animationDelay: "0.4s" }}>
-            <Link to="projects" spy={true} smooth={true} offset={-70} duration={500}>
+            <Link to="/projects">
               <Button size="lg" className="rounded-md gap-2 font-semibold">
                 View Projects <ArrowRight className="h-4 w-4" />
               </Button>
@@ -65,7 +65,7 @@ export default function HeroSection() {
                 <Download className="h-4 w-4" /> Download Resume
               </Button>
             </a>
-            <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+            <Link to="/contact">
               <Button variant="ghost" size="lg" className="rounded-md gap-2 font-semibold">
                 <Mail className="h-4 w-4" /> Contact Me
               </Button>

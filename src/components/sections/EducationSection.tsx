@@ -4,11 +4,11 @@ import SectionHeading from "@/components/SectionHeading";
 
 export default function EducationSection() {
   return (
-    <section id="education" className="container-section">
-      <SectionHeading 
-        title="Education" 
-        subtitle="My academic journey and qualifications" 
-      />
+    <section className="container-section">
+      <div className="mb-10">
+        <h2 className="text-2xl font-bold mb-2">Education</h2>
+        <div className="h-px w-10 bg-primary" />
+      </div>
       
       <div className="glass-card p-8 animate-fade-in">
         {/* EDITABLE: Education items - Add new degrees or modify existing ones */}

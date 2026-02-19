@@ -5,12 +5,12 @@ import ContactForm from "@/components/ContactForm";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="container-section bg-muted/30">
-      <SectionHeading 
-        title="Contact Me" 
-        subtitle="Get in touch for collaborations or opportunities" 
-        alignment="center" 
-      />
+    <section className="container-section">
+      <div className="mb-10">
+        <h1 className="text-3xl font-bold mb-2">Contact</h1>
+        <p className="text-muted-foreground text-sm">Get in touch for collaborations or opportunities</p>
+        <div className="h-px w-12 bg-primary mt-3" />
+      </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="animate-slide-in">
